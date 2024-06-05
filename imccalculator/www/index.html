@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with=device-width, inital-scale=1.0">
+        <title>IMC Calculator</title>
+        <link rel="stylesheet" href="lib/jquery.mobile.icons.min.css">
+        <link rel="stylesheet" href="lib/jquery.mobile.structure-1.4.5.min.css">
+        <link rel="stylesheet" href="lib/themes/imctheme3.min.css">
+        <link rel="stylesheet" href="css/index.css">
+    
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <h1>IMC Calculator</h1>
+        <form>
+            <fieldset>
+            <legend>Indice de masse corporelle</legend>
+            <label for="poids">Poids (kg)</label>
+            <input type="number" id="poids">
+            <label for="taille">Taille (m)</label>
+            <input type="number" id="taille">
+            <input type="button" value="Calculer" onclick="calculerImc()">
+            </fieldset>
+        </form>
+        <fieldset hidden>
+            <legend>Interpretation</legend>
+            <label id="interpretation"></label>
+        </fieldset>
+
+    </body>
+</html>
